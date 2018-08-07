@@ -7,8 +7,8 @@
     "test": "jest",
     "watch": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "postinstall": "npm run build",
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.js",
+    "postinstall": "npm run build"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -53,6 +53,7 @@
     "node-sass": "^4.9.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
     "react-test-renderer": "^16.4.1",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.0.3",
@@ -62,5 +63,13 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjmendoza/28-routing-and-testing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hjmendoza/28-routing-and-testing/issues"
+  },
+  "homepage": "https://github.com/hjmendoza/28-routing-and-testing#readme"
 }
