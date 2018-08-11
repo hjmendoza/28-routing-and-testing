@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import 'jest-enzyme';
+// import 'jest-enzyme';
 import { configure } from "enzyme";
 import { shallow } from "enzyme";
 import Adapter from 'enzyme-adapter-react-16';
@@ -12,16 +12,6 @@ import NoteCreateForm from '../../../src/components/notecreateform/notecreatefor
 describe("NoteCreateForm", () => {
   it("should render", () => {
     shallow(<NoteCreateForm />);
-  });
-
-  it("should have initial state", () => {
-    const wrapper = shallow(<NoteCreateForm />);
-    expect(wrapper).toHaveState({
-      title: "",
-      content: "",
-      editing: false,
-      completed: false
-    });
   });
 
   it("should handle form changes", () => {
