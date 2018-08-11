@@ -5,7 +5,7 @@ require('dotenv').config();
 const {DefinePlugin} = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const production = process.env.NODE_ENV === 'production'; // Boolean
+const production = process.env.NODE_ENV === 'production';
 
 const webpackConfig = module.exports = {};
 
@@ -20,7 +20,7 @@ webpackConfig.output = {
 webpackConfig.plugins = [
   new HtmlWebpackPlugin({
     title:'React App',
-    template: `${__dirname}/src/index.html`
+    template: `${__dirname}/src/index.html`,
   }),
   new DefinePlugin({
     API_URL: JSON.stringify(process.env.API_URL),
@@ -33,7 +33,7 @@ webpackConfig.module = {};
 webpackConfig.module.rules = [
   {
     test: /\.(png|gif|svg|jpg)$/,
-    use: ['file-loader'],
+    use: [ 'file-loader' ],
   },
   {
     test: /\.js$/,

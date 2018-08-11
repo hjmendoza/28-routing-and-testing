@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDom from 'react-dom';
 
 import App from './components/app.js';
 
-class Main extends React.Component {
+class Main extends Component {
   render() {
     return (
-      <App/>
+        <App />
     );
   }
 }
